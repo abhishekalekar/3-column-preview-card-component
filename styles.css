@@ -1,0 +1,136 @@
+
+/****CSS*****/
+/*****Abhishek Alekar*****/
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/*****root*****/
+:root {
+    --bright-orange:hsl(31, 77%, 52%);
+    --Dark-cyan:hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray : hsl(0, 0%, 95%);
+}
+
+body {
+    font-size: 15px;
+    font-family:'Lexend Deca', sans-serif;
+    background-color: var(--Very-light-gray);
+
+}
+/*****style for main container *****/
+.main-container {
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.main-container div {
+    width: 320px;
+    height:510px;
+}
+
+
+/*****styles for 3 card container *****/
+
+.card-container-sedans{
+    background-color: var(--bright-orange);
+    border-radius: 5% 0% 0% 5%;
+
+}
+.card-container-suvs{
+    background-color: var(--Dark-cyan);
+}
+.card-container-luxury {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0% 5% 5% 0%;
+}
+
+
+/*****styles for paragraph *****/
+.card-title {
+    padding-left: 15px;
+    color: var(--Very-light-gray);
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size:38px;
+}
+p {
+    padding:5% 15% 20% 15%;
+    color:var(--Transparent-white);
+}
+
+/*****styles for button *****/
+
+.icon {
+    padding:7% 15% 15% 5%; 
+}
+
+.button-sedans {
+    background-color:var(--bright-orange)
+}
+.button-suvs {
+    background-color:var(--Dark-cyan)
+}
+
+.button-luxury {
+    background-color:var(--Very-dark-cyan);
+}
+
+.button {
+    margin-left:10%;
+    padding:10px 25px;
+    border-radius: 25px;
+    background-color: var(--Very-light-gray);   
+    border:2px solid var(--Very-light-gray);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: transparent;
+    color:(--Very-light-gray);
+    cursor: pointer;
+} 
+
+/****footer style*****/
+.attribution{
+    text-align: center;
+    padding-bottom: 15%;
+}
+
+/******styles for Mobile/Small Screen*****/
+
+@media screen and (max-width: 767px) {
+
+    .main-container{
+        flex-direction: column;
+        height: unset;
+    }
+
+    .main-container div {
+        width: 330px;
+        height: 450px;
+    }
+
+    .card-container-sedans {
+        border-radius: 2% 2% 0% 0%;
+    }
+    
+    .card-container-luxury {
+        border-radius: 0% 0% 2% 2%;
+    }
+
+    p {
+        padding:5% 15% 20% 15%;
+    }
+
+    .attribution {
+        padding-top: 10%;
+    }
+}
