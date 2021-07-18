@@ -24,7 +24,7 @@ body {
 
 }
 /*****style for main container *****/
-.main-container {
+.container {
     height: 95vh;
     display: flex;
     align-items: center;
@@ -32,7 +32,7 @@ body {
     flex-direction: row;
 }
 
-.main-container div {
+.container div {
     width: 320px;
     height:510px;
 }
@@ -45,10 +45,10 @@ body {
     border-radius: 5% 0% 0% 5%;
 
 }
-.card-container-suvs{
+.card-suvs{
     background-color: var(--Dark-cyan);
 }
-.card-container-luxury {
+.card-luxury {
     background-color: var(--Very-dark-cyan);
     border-radius: 0% 5% 5% 0%;
 }
@@ -108,21 +108,21 @@ a:hover {
 
 @media screen and (max-width: 767px) {
 
-    .main-container{
+    .container{
         flex-direction: column;
         height: unset;
     }
 
-    .main-container div {
+    .container div {
         width: 330px;
         height: 450px;
     }
 
-    .card-container-sedans {
+    .card-sedans {
         border-radius: 2% 2% 0% 0%;
     }
     
-    .card-container-luxury {
+    .card-luxury {
         border-radius: 0% 0% 2% 2%;
     }
 
