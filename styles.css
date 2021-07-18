@@ -40,7 +40,7 @@ body {
 
 /*****styles for 3 card container *****/
 
-.card-container-sedans{
+.card-sedans{
     background-color: var(--bright-orange);
     border-radius: 5% 0% 0% 5%;
 
